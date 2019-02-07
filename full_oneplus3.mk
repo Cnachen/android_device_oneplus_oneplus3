@@ -1,5 +1,5 @@
-#
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,5 +13,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_oneplus3.mk
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit from device.mk
+$(call inherit-product, device/oneplus/oneplus3/device.mk)
+
+PRODUCT_NAME := full_oneplus3
+PRODUCT_DEVICE := oneplus3
+PRODUCT_MANUFACTURER := OnePlus
+PRODUCT_BRAND := OnePlus
+
+TARGET_VENDOR := oneplus

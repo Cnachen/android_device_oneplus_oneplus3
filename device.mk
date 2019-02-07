@@ -28,8 +28,7 @@ $(call inherit-product, vendor/oneplus/oneplus3/oneplus3-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -253,8 +252,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
-    OneplusPocketMode \
-    android.hardware.biometrics.fingerprint@2.1-service
+	android.hardware.biometrics.fingerprint@2.1-service
 
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \

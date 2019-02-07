@@ -13,20 +13,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+# Inherit from full_oneplus3.mk
+$(call inherit-product, device/oneplus/oneplus3/full_oneplus3.mk)
 
-# Inherit from oneplus3 device
-$(call inherit-product, device/oneplus/oneplus3/device.mk)
+# Inherit some common aosp stuff.
+$(call inherit-product, vendor/aosp/common.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Include Bootanimation configuration
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2018-11-01
 
-PRODUCT_NAME := lineage_oneplus3
+PRODUCT_NAME := aosp_oneplus3
 PRODUCT_DEVICE := oneplus3
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
