@@ -16,8 +16,8 @@
 # Inherit from full_oneplus3.mk
 $(call inherit-product, device/oneplus/oneplus3/full_oneplus3.mk)
 
-# Inherit some common aosp stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+# Inherit some common syberia stuff.
+$(call inherit-product, vendor/syberia/config/common_full_phone.mk)
 
 # Include Bootanimation configuration
 TARGET_BOOT_ANIMATION_RES := 1080
