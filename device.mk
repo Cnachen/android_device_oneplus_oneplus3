@@ -29,7 +29,7 @@ $(call inherit-product, vendor/oneplus/oneplus3/oneplus3-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-	$(LOCAL_PATH)/overlay-syberia
+	$(LOCAL_PATH)/overlay-aosp
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -474,5 +474,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
-# Inherit from oneplus-settings
-$(call inherit-product, device/oneplus/settings/common.mk)
