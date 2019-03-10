@@ -25,7 +25,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2018-11-01
 
-PRODUCT_NAME := aosp_oneplus3
+PRODUCT_NAME := syberia_oneplus3
 PRODUCT_DEVICE := oneplus3
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
