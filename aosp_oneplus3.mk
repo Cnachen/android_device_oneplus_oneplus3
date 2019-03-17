@@ -19,8 +19,10 @@ $(call inherit-product, device/oneplus/oneplus3/full_oneplus3.mk)
 # Inherit some common aosp stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# Include Bootanimation configuration
+# Include Build configuration
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+CUSTOM_BUILD_TYPE := EXPERIMENTAL
 
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2018-11-01

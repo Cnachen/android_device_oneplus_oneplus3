@@ -420,8 +420,8 @@
 
     <dimen name="config_progressBarCornerRadius">2dp</dimen>
 
-    <color name="accent_device_default_dark">FF80CBC4</color>
+    <color name="accent_device_default_dark">#FF80CBC4</color>
 
-    <color name="accent_device_default_light">FF00897B</color>
+    <color name="accent_device_default_light">#FF00897B</color>
 
 </resources>
