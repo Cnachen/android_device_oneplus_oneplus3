@@ -26,7 +26,7 @@ $(call inherit-product, vendor/carbon/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Vendor security patch level
-VENDOR_SECURITY_PATCH := 2018-12-01
+VENDOR_SECURITY_PATCH := 2018-11-01
 
 PRODUCT_NAME := carbon_oneplus3
 PRODUCT_DEVICE := oneplus3
