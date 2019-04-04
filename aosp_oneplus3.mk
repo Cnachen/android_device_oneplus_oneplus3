@@ -13,22 +13,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit Carbon GSM telephony parts
-$(call inherit-product, vendor/carbon/config/gsm.mk)
-
 # Inherit from full_oneplus3.mk
 $(call inherit-product, device/oneplus/oneplus3/full_oneplus3.mk)
 
-# Inherit some common carbon stuff.
-$(call inherit-product, vendor/carbon/config/common.mk)
+# Inherit some common aosp stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Include Build configuration
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+CUSTOM_BUILD_TYPE := EXPERIMENTAL
 
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2018-11-01
 
-PRODUCT_NAME := carbon_oneplus3
+PRODUCT_NAME := aosp_oneplus3
 PRODUCT_DEVICE := oneplus3
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -36,6 +35,3 @@ PRODUCT_BRAND := OnePlus
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 TARGET_VENDOR := oneplus
-
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.carbon.maintainer="mxdfpha"
