@@ -17,7 +17,7 @@
 $(call inherit-product, device/oneplus/oneplus3/full_oneplus3.mk)
 
 # Inherit some common pixys stuff.
-$(call inherit-product, vendor/pixys/config/common_full_phone.mk)
+$(call inherit-product, vendor/pixys/config/common.mk)
 
 # Include Build configuration
 TARGET_BOOT_ANIMATION_RES := 1080
